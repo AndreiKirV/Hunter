@@ -4,7 +4,7 @@ public class StatsSheet : MonoBehaviour
 {
     private int _strength;
     private int _masteryOfRanged;
-    private int _agility;
+    private int _agility; 
     private int _militaryLuck;
     private int _luck;
 
