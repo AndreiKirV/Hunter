@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class StatsSheet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int _strength;
+    private int _masteryOfRanged;
+    private int _agility;
+    private int _militaryLuck;
+    private int _luck;
 
-    // Update is called once per frame
-    void Update()
+    public StatsSheet(int strength, int masteryOfRanged, int agility, int militaryLuck, int luck)
     {
-        
+        _strength = strength;
+        _masteryOfRanged = masteryOfRanged;
+        _agility = agility;
+        _militaryLuck = militaryLuck;
+        _luck = luck;
     }
 }
