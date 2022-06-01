@@ -267,6 +267,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2116,6 +2117,88 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      rock_packed_59: 2275153116349958245
+      rock_packed_76: 136454131076836036
+      rock_packed_70: -3333910346598326986
+      rock_packed_22: 4178291169627706713
+      rock_packed_12: -8417153230050130922
+      rock_packed_61: -5023166965255553448
+      rock_packed_17: 3165534679513209964
+      rock_packed_66: 7109570859416701939
+      rock_packed_78: 8355387708974636254
+      rock_packed_56: 2379675606518583569
+      rock_packed_23: 7295264495609313896
+      rock_packed_9: -6588323459886029643
+      rock_packed_7: 1007181925348376408
+      rock_packed_48: 5925074190456979723
+      rock_packed_34: -763431769086852013
+      rock_packed_64: -5606805408200284948
+      rock_packed_68: -91949223670834350
+      rock_packed_74: 1982075210373152489
+      rock_packed_25: -5535535209905886271
+      rock_packed_40: 8916911310055421776
+      rock_packed_75: 5832320968080088892
+      rock_packed_80: -8199033928519242642
+      rock_packed_79: -3721190029868676741
+      rock_packed_36: -7148837341652013086
+      rock_packed_69: 6867179655736962411
+      rock_packed_63: 9215937557038321138
+      rock_packed_57: -878089777362213326
+      rock_packed_5: -7300949254865555884
+      rock_packed_46: -3796286187812956690
+      rock_packed_39: -5481350013991490142
+      rock_packed_11: -5080713675658672181
+      rock_packed_13: 5024397116455682320
+      rock_packed_49: 8389621796224823531
+      rock_packed_41: -1540640371551379723
+      rock_packed_58: -4948635198290148441
+      rock_packed_4: -41766348638705501
+      rock_packed_20: -809364619525730752
+      rock_packed_52: 3767384180741198172
+      rock_packed_21: 6664466948700504663
+      rock_packed_77: -91999728422490328
+      rock_packed_0: -7552501260309719783
+      rock_packed_14: 5106276384666193807
+      rock_packed_24: -3729633021730735161
+      rock_packed_18: -5447581429113919343
+      rock_packed_38: 5288972775114448569
+      rock_packed_15: -5765234371570206929
+      rock_packed_32: 7531143213163329550
+      rock_packed_26: 3782946555449757898
+      rock_packed_53: -8084094424071136115
+      rock_packed_73: 8656174013698564373
+      rock_packed_2: -7122101411977392750
+      rock_packed_62: -8938472355143482869
+      rock_packed_54: 1632090544637573212
+      rock_packed_16: 4528895896638677869
+      rock_packed_47: 6696347575187618117
+      rock_packed_67: -218006234004846910
+      rock_packed_50: -3397090748047548484
+      rock_packed_44: 5663119162950803266
+      rock_packed_19: 5741106055912234977
+      rock_packed_3: 802286216321227084
+      rock_packed_37: 5432603488368639053
+      rock_packed_33: 6840801519576094417
+      rock_packed_1: 7391966842851955276
+      rock_packed_28: -1366401275100928932
+      rock_packed_35: -9130239537649734822
+      rock_packed_29: 621412647839805918
+      rock_packed_43: -3862736562321772394
+      rock_packed_6: -3367283319382437959
+      rock_packed_27: -4837788430517952063
+      rock_packed_10: -4870876818884501609
+      rock_packed_45: -198472582972995123
+      rock_packed_72: 2277352588769223798
+      rock_packed_51: 2607427858501183583
+      rock_packed_31: 5489664451890594193
+      rock_packed_30: -6356846880186026987
+      rock_packed_8: -7442266741114836396
+      rock_packed_60: 6383966445262404366
+      rock_packed_55: 4060488380981453473
+      rock_packed_65: -7329274272875605212
+      rock_packed_71: -8616784246662830816
+      rock_packed_42: 1328810508346790319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -267,6 +267,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2116,6 +2117,88 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sand_packed_44: -3822796713709670374
+      sand_packed_59: 1298644894984194707
+      sand_packed_33: 6551348228297166533
+      sand_packed_65: -4152704997935419130
+      sand_packed_22: -3139704481075124787
+      sand_packed_69: -4974421766137742743
+      sand_packed_74: -150896560226149817
+      sand_packed_31: 6511293868286999995
+      sand_packed_51: 9093382477592968283
+      sand_packed_75: 2396085084659715698
+      sand_packed_15: 6879939377431522294
+      sand_packed_49: 6835494064808160045
+      sand_packed_13: 196178227582954917
+      sand_packed_8: -1816707501934251169
+      sand_packed_76: 4082984483003416590
+      sand_packed_5: 7636292193329944464
+      sand_packed_37: -9029396711968026506
+      sand_packed_25: -7907575090344588254
+      sand_packed_1: -8205949081292592001
+      sand_packed_29: 2365691377485739886
+      sand_packed_17: 3797388017252795526
+      sand_packed_41: -8308057892891947514
+      sand_packed_24: 1550075558336931512
+      sand_packed_53: 8130853785246291019
+      sand_packed_7: -6382419335400585074
+      sand_packed_6: -4357467870222805523
+      sand_packed_2: 1417340474844557245
+      sand_packed_38: -8575844448924909136
+      sand_packed_54: 3850488361152906015
+      sand_packed_27: -2254490334052096145
+      sand_packed_48: -6729449955508246429
+      sand_packed_47: 7551794440764679221
+      sand_packed_62: 8848471337380400541
+      sand_packed_45: 6736729889974545177
+      sand_packed_60: -2400638860026413722
+      sand_packed_36: -3068935683532807399
+      sand_packed_19: 6587352778187703865
+      sand_packed_20: 2776825584644636626
+      sand_packed_30: -8663580487572195895
+      sand_packed_16: -4780755380727569123
+      sand_packed_39: -3250801629073332370
+      sand_packed_71: 889706977434280036
+      sand_packed_10: -7472938680150515890
+      sand_packed_21: 3485198260514065567
+      sand_packed_42: -1650463149203543493
+      sand_packed_4: 4648350950077005460
+      sand_packed_12: -3061203353107049620
+      sand_packed_52: 3417410979336392420
+      sand_packed_66: 3270645049553400165
+      sand_packed_72: -8356967109403880868
+      sand_packed_57: -8771678563677856515
+      sand_packed_73: 7193281052947594047
+      sand_packed_0: -5907458112824348054
+      sand_packed_56: 1634774705977719897
+      sand_packed_55: 1672243536419906752
+      sand_packed_79: 8642829193340346815
+      sand_packed_68: 6884138133100371527
+      sand_packed_3: 4557752216669613062
+      sand_packed_11: -8100223025055798920
+      sand_packed_35: -6015454318852485907
+      sand_packed_40: -2379572049178515881
+      sand_packed_58: -1598786835404632245
+      sand_packed_64: 1206993694912698766
+      sand_packed_67: -2658184988957493129
+      sand_packed_70: 6707299684628813366
+      sand_packed_14: -9007051961650813711
+      sand_packed_9: 5551625670644288430
+      sand_packed_18: 3163733933101961718
+      sand_packed_77: 7493663231791927337
+      sand_packed_61: 6757093324762370655
+      sand_packed_26: -7802120432732119358
+      sand_packed_32: -4664592151919992168
+      sand_packed_50: 1013991438366561330
+      sand_packed_78: 1011968600048740098
+      sand_packed_46: 3118436123958848004
+      sand_packed_23: -2733823786753957392
+      sand_packed_28: 1360376124147483497
+      sand_packed_34: -7349087984179763307
+      sand_packed_63: -2904335619272377734
+      sand_packed_80: 5874665777030203125
+      sand_packed_43: -4520814179745995218
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
