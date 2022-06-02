@@ -312,7 +312,7 @@ TextureImporter:
         y: 756
         width: 51
         height: 87
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -581,8 +581,8 @@ TextureImporter:
       name: knights_3x_22
       rect:
         serializedVersion: 2
-        x: 795
-        y: 648
+        x: 794
+        y: 647
         width: 45
         height: 90
       alignment: 7
@@ -1151,9 +1151,9 @@ TextureImporter:
       knights_3x_8: 449141721
       knights_3x_18: 1455824581
       knights_3x_10: 2024476292
+      knights_3x_42: -1916956980
       knights_3x_24: -730454085
       knights_3x_11: 984128978
-      knights_3x_42: -1916956980
       knights_3x_47: 769221258
       knights_3x_44: -2013656728
       knights_3x_15: -1059456920
