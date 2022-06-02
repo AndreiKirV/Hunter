@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int _health;
-    //[SerializeField] private int _reward; награда за персонажа в денежном и опытном еквиваленте
+    [SerializeField] private int _health = 100;
+    //[SerializeField] private int _reward; пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     [SerializeField] private Player _target;
 
     public Player Target => _target;
 
-    public void TakeDamage(int damage)
+    public int TakeDamage(int damage)
     {
-
+        _health -= damage;
+        return _health;
     }
-
-
 }
+ 
