@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
     //[SerializeField] private int _reward;
     [SerializeField] private Player _target;
-    private Vector2 _direction;
     [SerializeField] private Animator _animator;
+
+    private Vector2 _direction;
 
     private void Start()
     {

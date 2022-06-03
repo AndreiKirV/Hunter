@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 34913478}
   - component: {fileID: 34913481}
   - component: {fileID: 34913482}
+  - component: {fileID: 34913483}
   m_Layer: 0
   m_Name: Basic Charakter Spritesheet_0
   m_TagString: Untagged
@@ -272,6 +273,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &34913483
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34913477}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &114434585
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +306,7 @@ GameObject:
   - component: {fileID: 114434586}
   - component: {fileID: 114434589}
   - component: {fileID: 114434590}
+  - component: {fileID: 114434591}
   m_Layer: 0
   m_Name: Basic Charakter Spritesheet_0 (1)
   m_TagString: Untagged
@@ -421,6 +443,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &114434591
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114434585}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &178747123
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +524,7 @@ GameObject:
   - component: {fileID: 226115165}
   - component: {fileID: 226115168}
   - component: {fileID: 226115169}
+  - component: {fileID: 226115170}
   m_Layer: 0
   m_Name: Basic Charakter Spritesheet_0 (2)
   m_TagString: Untagged
@@ -618,6 +661,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &226115170
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226115164}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &397688685
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +820,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -13986,7 +14049,7 @@ MonoBehaviour:
   _agility: 1
   _militaryLuck: 1
   _luck: 1
-  _marksmanship: 2
+  _marksmanship: 2.5
   _speed: 5
   _currentWeapon: {fileID: 0}
 --- !u!95 &1482748259
@@ -14313,6 +14376,7 @@ GameObject:
   - component: {fileID: 1525788476}
   - component: {fileID: 1525788479}
   - component: {fileID: 1525788480}
+  - component: {fileID: 1525788481}
   m_Layer: 0
   m_Name: Basic Charakter Spritesheet_1
   m_TagString: Untagged
@@ -14449,3 +14513,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1525788481
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525788475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
