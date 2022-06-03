@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 4411605896020229987}
   - component: {fileID: 4411605896020229988}
   - component: {fileID: 4411605896020229995}
-  - component: {fileID: 4411605896020229992}
   - component: {fileID: 4411605896020229993}
   - component: {fileID: 4411605896020229998}
   - component: {fileID: 4411605896020229997}
@@ -170,21 +169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _firstState: {fileID: 4411605896020229998}
---- !u!114 &4411605896020229992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4411605896020230013}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab677820325f90144aae6ca570f8da0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetState: {fileID: 4411605896020229988}
-  _transitionRange: 2
-  _rangeSpread: 2
 --- !u!114 &4411605896020229993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions:
-  - {fileID: 4411605896020229992}
+  - {fileID: 0}
   _transformsPoints:
   - {fileID: 4411605895438513965}
   _speed: 2

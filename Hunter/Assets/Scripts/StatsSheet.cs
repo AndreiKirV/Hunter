@@ -16,12 +16,19 @@ public class StatsSheet : MonoBehaviour
     public int Luck => _luck;
     public int Marksmanship => _marksmanship;
 
-    public StatsSheet(int strength, int masteryOfRanged, int agility, int militaryLuck, int luck, int _marksmanship)
+    public StatsSheet(int strength, int masteryOfRanged, int agility, int militaryLuck, int luck, int marksmanship)
     {
         _strength = strength;
         _masteryOfRanged = masteryOfRanged;
         _agility = agility;
         _militaryLuck = militaryLuck;
         _luck = luck;
+        _marksmanship = marksmanship;
+    }
+
+    public void ShowStates ()
+    {
+        string tempString = ($"{_strength} + {_masteryOfRanged} + {_agility} + {_militaryLuck} + {_luck} + {_marksmanship}");
+        Debug.Log(tempString);
     }
 }

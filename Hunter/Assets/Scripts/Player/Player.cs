@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -21,6 +22,8 @@ public class Player : MonoBehaviour
     private Enemy _targetEnemy;
     private int _maxValueMilitaryLuck = 100;
     private int _minValueMilitaryLuck = 0;
+
+    private List<Enemy> _enemies;
 
     public int Strength => _strength;
     public int MasteryOfRanged => _masteryOfRanged;
