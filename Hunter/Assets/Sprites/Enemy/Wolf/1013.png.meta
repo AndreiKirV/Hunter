@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1127,8 +1127,8 @@ TextureImporter:
       1013_40: 2112272732
       1013_0: 279095859
       1013_12: -953949014
-      1013_31: -190606557
       1013_41: 953288128
+      1013_31: -190606557
       1013_45: -894238209
       1013_16: 763157602
       1013_17: 354928357
