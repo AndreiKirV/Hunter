@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private int _health;
     [SerializeField] private int _strength = 1;
     [SerializeField] private int _masteryOfRanged = 1;
     [SerializeField] private int _agility = 1; 
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _speed = 1;
     [SerializeField] private Weapon _currentWeapon;
 
+    private int _currentHealth;
     private StatsSheet _statsSheet;
     private List<Weapon> _weapons;
     private List <Enemy> _enemiesInSight;
@@ -52,5 +54,15 @@ public class Player : MonoBehaviour
             return true;
         else
             return false;
+    }
+
+    public void ApplayDamage(int damage)
+    {
+        _currentHealth -= damage;
+
+        if(_currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

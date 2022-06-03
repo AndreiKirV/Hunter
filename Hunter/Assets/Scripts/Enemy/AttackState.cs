@@ -2,19 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator))]
 public class AttackState : State
 {
-
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int _damage;
+    [SerializeField] private float _delay;
+    
+    private float _lastAttackTime;
+    private Animator _animator;
+    
+    private void Start()
     {
-        
+        _animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    private void Update()
     {
-        
+        if (_lastAttackTime <= 0)
+        {
+            Attack(Target);
+            _lastAttackTime = _delay;
+        }
+
+        _lastAttackTime -= Time.deltaTime;
+    }
+
+    private void Attack(Player target)
+    {
+        _animator.Play("Attack");
+        target.ApplayDamage(_damage);
     }
 }
