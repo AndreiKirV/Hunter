@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 8016347184917369868}
   - component: {fileID: 8016347184917369875}
   - component: {fileID: 8016347184917369872}
-  m_Layer: 0
+  - component: {fileID: 323359875427098456}
+  - component: {fileID: 1187566388223987168}
+  m_Layer: 6
   m_Name: Rabit
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +151,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions: []
-  _transformsPoints:
-  - {fileID: 0}
+  _patrolPoints: []
+  _enemy: {fileID: 0}
   _speed: 2
+  _animator: {fileID: 8016347184917369871}
+--- !u!58 &323359875427098456
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016347184917369869}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.08}
+  serializedVersion: 2
+  m_Radius: 0.08
+--- !u!114 &1187566388223987168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016347184917369869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34071136005d62f4a82595f4e4a7e663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackCooldown: 1
+  _range: 9.04
+  _location: 1.77
+  _damage: 1
+  _circleCollider: {fileID: 323359875427098456}
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 128

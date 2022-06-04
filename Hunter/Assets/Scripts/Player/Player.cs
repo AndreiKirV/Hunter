@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private Enemy _targetEnemy;
     private int _maxValueMilitaryLuck = 100;
     private int _minValueMilitaryLuck = 0;
+    private GameObject _player;
 
     public int Strength => _strength;
     public int MasteryOfRanged => _masteryOfRanged;
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour
     public int Luck => _luck;
     public float Speed => _speed;
     public int Marksmanship => _marksmanship;
+
+    public GameObject PlayerLife => _player;
 
     private void Start() 
     {
