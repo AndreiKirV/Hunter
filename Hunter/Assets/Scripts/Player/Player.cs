@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int _health;
+    [Header("Stats")]
+    [SerializeField] private int _health = 100;
     [SerializeField] private int _strength = 1;
     [SerializeField] private int _masteryOfRanged = 1;
     [SerializeField] private int _agility = 1; 
     [SerializeField] private int _militaryLuck = 1;
     [SerializeField] private int _luck = 1;
-    [SerializeField] private int _marksmanship = 1;
+    [SerializeField] private float _marksmanship = 2;
+
+    [Header("RealStats")]
     [SerializeField] private float _speed = 1;
     [SerializeField] private Weapon _currentWeapon;
 
@@ -23,13 +27,15 @@ public class Player : MonoBehaviour
     private int _minValueMilitaryLuck = 0;
     private GameObject _player;
 
+    private List<Enemy> _enemies;
+
     public int Strength => _strength;
     public int MasteryOfRanged => _masteryOfRanged;
     public int Agility => _agility;
     public int MilitaryLuck => _militaryLuck;
     public int Luck => _luck;
     public float Speed => _speed;
-    public int Marksmanship => _marksmanship;
+    public float Marksmanship => _marksmanship;
 
     public GameObject PlayerLife => _player;
 
