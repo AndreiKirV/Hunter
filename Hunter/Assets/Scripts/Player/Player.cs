@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
     public float Speed => _speed;
     public float Marksmanship => _marksmanship;
 
+    public GameObject PlayerLife => _player;
+
     private void Start() 
     {
         _statsSheet = new StatsSheet(_strength, _masteryOfRanged, _agility, _militaryLuck, _luck, _marksmanship);
@@ -68,7 +70,7 @@ public class Player : MonoBehaviour
 
         if(_currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Debug.Log($"{_health}");
         }
     }
 }
