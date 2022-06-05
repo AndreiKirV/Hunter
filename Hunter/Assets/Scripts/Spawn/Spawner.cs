@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject _spawnPoint;
     [SerializeField] private int _delayRelocate = 1;
     [SerializeField] private List<Enemy> _enemies;
-    
+    [SerializeField] private int _valueAtOnce = 3;
     private bool _isSpawn = true;
 
     private void Start() 
@@ -16,10 +16,13 @@ public class Spawner : MonoBehaviour
         StartCoroutine(Relocate(_delayRelocate));
     }
 
-    private void Spawn (Transform spawnPoint)
+    private void Spawn (Transform spawnPoint, int value)
     {
-        Vector3 tempSpawnPoistion = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z);
-        Instantiate(_enemies[Random.Range(0, _enemies.Count)], tempSpawnPoistion, Quaternion.identity);
+        for (int i = 0; i < value; i++)
+        {
+            Vector3 tempSpawnPoistion = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z);
+            Instantiate(_enemies[Random.Range(0, _enemies.Count)], tempSpawnPoistion, Quaternion.identity);
+        }
     }
 
     private IEnumerator Relocate (int delay)
@@ -44,7 +47,7 @@ public class Spawner : MonoBehaviour
                 break;
            }
 
-           Spawn(_spawnPoint.transform);
+           Spawn(_spawnPoint.transform, _valueAtOnce);
        }
     }
 }
