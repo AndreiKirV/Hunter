@@ -65183,14 +65183,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0cd016476f14344b82da66926a5588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 50
-  _strength: 0
-  _masteryOfRanged: 0
-  _agility: 0
-  _militaryLuck: 0
-  _luck: 0
+  _health: 100
+  _strength: 1
+  _masteryOfRanged: 1
+  _agility: 1
+  _militaryLuck: 1
+  _luck: 1
   _marksmanship: 1
-  _playerLife: 0
+  _playerLife: 1
   _speed: 5
   _currentWeapon: {fileID: 0}
 --- !u!95 &1482748259
@@ -65603,7 +65603,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5461721739692507106, guid: 160b3b52c9d51724d90eceaa64b6e0ce, type: 3}
       propertyPath: _rangeSpread
-      value: 5
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461721739692507106, guid: 160b3b52c9d51724d90eceaa64b6e0ce, type: 3}
+      propertyPath: _transitionRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485498585857034678, guid: 160b3b52c9d51724d90eceaa64b6e0ce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7485498585857034678, guid: 160b3b52c9d51724d90eceaa64b6e0ce, type: 3}
       propertyPath: _rangeSpread
