@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class ViewingRadius : MonoBehaviour
 {
-    [SerializeField] private Player _player;
+    private Player _player;
 
     private int _maxRadius = 100;
 
@@ -13,6 +13,7 @@ public class ViewingRadius : MonoBehaviour
 
     private void Start() 
     {
+        _player = transform.parent.gameObject.GetComponent<Player>();
         ReSize(_player.Marksmanship);
     }
 
@@ -78,7 +79,7 @@ public class ViewingRadius : MonoBehaviour
         }
     }
 
-    private void ReSize (float value)
+    protected void ReSize (float value)
     {
         transform.localScale = new Vector3(value, value, 0.0f);
     }

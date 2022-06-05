@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private int _rangeOfAttack = 10;
+    [SerializeField] private float _rangeOfAttack = 2;
     [SerializeField] private int _baseDamage = 1;
+    [SerializeField] private bool _isRanged = false;
 
-    private bool _isRanged;
     private Player _player;
 
     public bool IsRanged => _isRanged;
-    public int RangeOfAttack => _rangeOfAttack;
+    public float RangeOfAttack => _rangeOfAttack;
+
+    public Weapon (int baseDamage, float rangeOfAttack, bool isRanged = false)
+    {
+        _baseDamage = baseDamage;
+        _rangeOfAttack = rangeOfAttack;
+        _isRanged = isRanged;
+    }
 
     public int CalculateDamage(int damage)
     {

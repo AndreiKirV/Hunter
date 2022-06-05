@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     [Header("RealStats")]
     [SerializeField] private float _speed = 1;
-    [SerializeField] private Weapon _currentWeapon;
+    private Weapon _currentWeapon = new Weapon(2,2f); //SerializeField
 
     private int _currentHealth;
     private StatsSheet _statsSheet;
@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
     public int PlayerLife => _playerLife;
     public float Speed => _speed;
     public float Marksmanship => _marksmanship;
+    public Weapon CurrentWeapon => _currentWeapon;
 
     private void Start() 
     {
