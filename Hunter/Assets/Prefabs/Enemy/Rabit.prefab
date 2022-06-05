@@ -110,7 +110,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.08}
   serializedVersion: 2
-  m_Radius: 0.08
+  m_Radius: 0.81
 --- !u!95 &8016347184917369871
 Animator:
   serializedVersion: 4
@@ -193,6 +193,8 @@ MonoBehaviour:
   _targetState: {fileID: 5457228318767864559}
   _transitionRange: 2
   _rangeSpread: 2
+  _circleCollider: {fileID: 323359875427098456}
+  _location: 0
 --- !u!114 &5457228318767864559
 MonoBehaviour:
   m_ObjectHideFlags: 0
