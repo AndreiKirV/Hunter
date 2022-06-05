@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
         if (_health <= 0)
         {
             Destroy(gameObject);
+            Debug.Log("Ай эм умер");
         }
 
         return _health;

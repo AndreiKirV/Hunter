@@ -7,6 +7,8 @@ public class ViewingRadius : MonoBehaviour
 {
     [SerializeField] private Player _player;
 
+    private int _maxRadius = 100;
+
     private List<GameObject> _enemies = new List<GameObject>();
 
     private void Start() 
@@ -16,7 +18,6 @@ public class ViewingRadius : MonoBehaviour
 
     private void Update() 
     {
-        IncreaseSize(0.1f);
     }
     
     private void OnTriggerEnter2D(Collider2D other) 
@@ -29,17 +30,20 @@ public class ViewingRadius : MonoBehaviour
         TryRemoveEnemy(other);
     }
 
+    public void EnlargeSize (float value)
+    {   
+        Vector3 tempLocalScale = transform.localScale;
+
+        if ((tempLocalScale.x += value) >= _maxRadius)
+            transform.localScale += new Vector3(value, value, 0.0f);  
+    }
+
     public void IncreaseSize (float value)
     {   
         Vector3 tempLocalScale = transform.localScale;
 
         if ((tempLocalScale.x -= value) >= 0)
-        {
-            transform.localScale -= new Vector3(value, value, 0.0f);
-            Debug.Log($"Уменьшена дальность поля зрения на {value}, тепер поле зрения равна {transform.localScale}");
-        }
-        else
-            Debug.Log($"Уменьшена дальность поля зрения на {value}, тепер поле зрения равна {transform.localScale}");
+            transform.localScale -= new Vector3(value, value, 0.0f);  
     }
 
     private bool MatchUp (List<GameObject> objects, GameObject targetObject)
@@ -63,7 +67,6 @@ public class ViewingRadius : MonoBehaviour
         if (other.gameObject.TryGetComponent<Enemy>(out Enemy enemy) && MatchUp(_enemies, other.gameObject) == false)
         {
             _enemies.Add(other.gameObject);
-            Debug.Log("Объект добавлен");
         }
     }
 
@@ -72,7 +75,6 @@ public class ViewingRadius : MonoBehaviour
         if(MatchUp(_enemies, other.gameObject) == true) 
         {
             _enemies.Remove(other.gameObject);
-            Debug.Log(other + "удален" + "В поле видимости " + _enemies.Count + "врагов");
         }
     }
 

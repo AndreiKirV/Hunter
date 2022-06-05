@@ -22,9 +22,9 @@ public class Player : MonoBehaviour
     private StatsSheet _statsSheet;
     private List<Weapon> _weapons;
     private List <Enemy> _enemiesInSight;
-    private Enemy _targetEnemy;
     private int _maxValueMilitaryLuck = 100;
     private int _minValueMilitaryLuck = 0;
+    private Enemy _targetEnemy;
 
     private List<Enemy> _enemies;
 
