@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] private int _militaryLuck = 1;
     [SerializeField] private int _luck = 1;
     [SerializeField] private float _marksmanship = 2;
+    [SerializeField] private int _playerLife;
 
     [Header("RealStats")]
     [SerializeField] private float _speed = 1;
@@ -33,10 +34,9 @@ public class Player : MonoBehaviour
     public int Agility => _agility;
     public int MilitaryLuck => _militaryLuck;
     public int Luck => _luck;
+    public int PlayerLife => _playerLife;
     public float Speed => _speed;
     public float Marksmanship => _marksmanship;
-
-    public GameObject PlayerLife => _player;
 
     private void Start() 
     {
