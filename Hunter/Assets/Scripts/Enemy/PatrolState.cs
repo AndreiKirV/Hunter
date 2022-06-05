@@ -18,7 +18,6 @@ public class PatrolState : State
 
     private int _randomPoint;
 
-    
     private void Start()
     {
         _delay = _startWaitTime;

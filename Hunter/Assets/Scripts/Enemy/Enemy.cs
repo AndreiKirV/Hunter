@@ -7,15 +7,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
     //[SerializeField] private int _reward;
-    [SerializeField] private Player _target;
     [SerializeField] private Animator _animator;
-
+    private Player _target;
     private Vector2 _direction;
-
-    private void Start()
-    {
-
-    }
 
     private void Update()
     {
@@ -32,13 +26,16 @@ public class Enemy : MonoBehaviour
 
         if (_health <= 0)
         {
-            Destroy(gameObject);
             Debug.Log("Ай эм умер");
+            Destroy(gameObject);
         }
 
         return _health;
     }
 
-
+    public void AssignTarget(Player player)
+    {
+        _target = player;
+    }
 }
  
