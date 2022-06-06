@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveState : State
 {
     [SerializeField] private float _speed;
-    //[SerializeField] private Player _target;
 
     private void Update()
     {

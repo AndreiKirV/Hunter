@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     private List<Enemy> _enemies;
 
     public int Strength => _strength;
+    public int CurrentHealth => _currentHealth;
     public int MasteryOfRanged => _masteryOfRanged;
     public int Agility => _agility;
     public int MilitaryLuck => _militaryLuck;
@@ -56,8 +57,8 @@ public class Player : MonoBehaviour
     {
         int tempRandom = 0;
 
-        if(_targetEnemy.TakeDamage(_militaryLuck += DealDamage()) <= 0)
-            tempRandom = Random.Range(_minValueMilitaryLuck, _maxValueMilitaryLuck);
+        //if(_targetEnemy.TakeDamage(_militaryLuck += DealDamage()) <= 0)
+            //tempRandom = Random.Range(_minValueMilitaryLuck, _maxValueMilitaryLuck);
 
         if(tempRandom <= _militaryLuck) 
             {
@@ -74,7 +75,7 @@ public class Player : MonoBehaviour
 
         if(_currentHealth <= 0)
         {
-            Debug.Log($"{_health}");
+       
         }
     }
 }

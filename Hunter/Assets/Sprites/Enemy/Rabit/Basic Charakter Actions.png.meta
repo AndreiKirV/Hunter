@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20a370ef837031f478f267780e38cac0
+guid: 1ca840aaae0c2ec4eb15f0288fd5bff3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,96 +116,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0412\u0437\u0440\u044B\u0432_0"
+      name: Basic Charakter Actions_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 42
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1f06f39249061d48adb53cbbb8a8c10
-      internalID: 1643222154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u0412\u0437\u0440\u044B\u0432_1"
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 42
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f481d7a1de61a00419c5053b11c095ec
-      internalID: -1780725558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u0412\u0437\u0440\u044B\u0432_2"
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 42
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 358199794b9c61849a2494a53fb6cb12
-      internalID: 934467397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u0412\u0437\u0440\u044B\u0432_3"
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 42
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3877fed4a5c03ca4fa2aa1325c2d998e
-      internalID: -1347509957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u0412\u0437\u0440\u044B\u0432_4"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 8
-        width: 25
+        x: 17
+        y: 253
+        width: 23
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -214,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c97b716db2e7f1f4590e0d60905477c1
-      internalID: -1382519105
+      spriteID: b6c76ae14115fa1449d1e76aaa4fc86a
+      internalID: 364549509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0412\u0437\u0440\u044B\u0432_5"
+      name: Basic Charakter Actions_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 0
-        width: 40
-        height: 30
+        x: 58
+        y: 253
+        width: 25
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +151,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a6ab0876971a2c4f984bdfcb894b258
-      internalID: -637217968
+      spriteID: ff2feffddab7edf4e832cc8749cae7bd
+      internalID: -930942020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Charakter Actions_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 446
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982864fff8fc67c4fb849bce1e0ecb7b
+      internalID: -2025927480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Charakter Actions_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 448
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7305c1289377ba48b4725b265da9377
+      internalID: 1099442481
       vertices: []
       indices: 
       edges: []
@@ -252,12 +210,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u0412\u0437\u0440\u044B\u0432_4": -1382519105
-      "\u0412\u0437\u0440\u044B\u0432_2": 934467397
-      "\u0412\u0437\u0440\u044B\u0432_5": -637217968
-      "\u0412\u0437\u0440\u044B\u0432_0": 1643222154
-      "\u0412\u0437\u0440\u044B\u0432_1": -1780725558
-      "\u0412\u0437\u0440\u044B\u0432_3": -1347509957
+      Basic Charakter Actions_0: 364549509
+      Basic Charakter Actions_1: -930942020
+      Basic Charakter Actions_3: 1099442481
+      Basic Charakter Actions_2: -2025927480
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
