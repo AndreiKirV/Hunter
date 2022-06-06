@@ -7,8 +7,15 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private PlayerDamageObject _bullet;
     [SerializeField] private float offset;
     [SerializeField] private Transform _shotDirection;
-    [SerializeField] private float _startTime;
+    [SerializeField] private float _cooldown;
+
+    private Player _player;
     private float _timeShot;
+
+    private void Start() 
+    {
+        _player = transform.parent.gameObject.GetComponent<Player>();
+    }
 
     private void Update() 
     {
@@ -20,8 +27,9 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Instantiate(_bullet, _shotDirection.position, transform.rotation);
-                _timeShot = _startTime;
+                PlayerDamageObject tempBullet = Instantiate(_bullet, _shotDirection.position, transform.rotation);
+                tempBullet.AssignDamage(_player.DealDamage(), _player.TryDoCriticalDamage());
+                _timeShot = _cooldown;
             }
         }
         else

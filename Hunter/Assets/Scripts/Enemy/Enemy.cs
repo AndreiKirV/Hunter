@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     public int TakeDamage(int damage)
     {
         _health -= damage;
+        Debug.Log(_health);
 
         if (_health <= 0)
         {

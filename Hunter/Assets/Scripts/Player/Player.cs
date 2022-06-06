@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         if (_currentWeapon.IsRanged == true)
             return _currentWeapon.CalculateDamage(_masteryOfRanged);
         else
-            return _currentWeapon.CalculateDamage(_masteryOfRanged);       
+            return _currentWeapon.CalculateDamage(_strength);       
     }
 
     public bool TryDoCriticalDamage ()
@@ -60,7 +60,10 @@ public class Player : MonoBehaviour
             tempRandom = Random.Range(_minValueMilitaryLuck, _maxValueMilitaryLuck);
 
         if(tempRandom <= _militaryLuck) 
-            return true;
+            {
+                Debug.Log("Critical");
+                return true;
+            }        
         else
             return false;
     }
