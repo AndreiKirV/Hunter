@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     public int TakeDamage(int damage)
     {
         _health -= damage;
-        Debug.Log(_health);
+        Debug.Log("Здоровье врага" + _health);
 
         if (_health <= 0)
         {
@@ -38,5 +38,13 @@ public class Enemy : MonoBehaviour
     {
         _target = player;
     }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.gameObject.TryGetComponent<PlayerDamageObject>(out PlayerDamageObject DamageObject))
+        {   
+            Debug.Log(DamageObject.Damage);
+            TakeDamage(DamageObject.Damage);
+        }
+    }
 }
- 

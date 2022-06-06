@@ -52,22 +52,6 @@ public class Player : MonoBehaviour
             return _currentWeapon.CalculateDamage(_strength);       
     }
 
-    public bool TryDoCriticalDamage ()
-    {
-        int tempRandom = 0;
-
-        if(_targetEnemy.TakeDamage(_militaryLuck += DealDamage()) <= 0)
-            tempRandom = Random.Range(_minValueMilitaryLuck, _maxValueMilitaryLuck);
-
-        if(tempRandom <= _militaryLuck) 
-            {
-                Debug.Log("Critical");
-                return true;
-            }        
-        else
-            return false;
-    }
-
     public void ApplayDamage(int damage)
     {
         _currentHealth -= damage;

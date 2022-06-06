@@ -8,6 +8,14 @@ public class PlayerDamageObject : MonoBehaviour
     private int _damage;
     private bool _isCritical = false;
 
+    public int Damage => _damage;
+
+    public PlayerDamageObject (int damage, bool  isCritical)
+    {
+        _damage = damage;
+        _isCritical = isCritical;
+    }
+
     private void Update() 
     {
         transform.Translate(Vector2.right * _speed * Time.deltaTime);
@@ -25,14 +33,14 @@ public class PlayerDamageObject : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.TakeDamage(_damage);
+            Debug.Log($"Влетел в {enemy} {_damage}");
+            Destroy(gameObject);
         }
     }
 
-    public int AssignDamage (int damage, bool  isCritical)
+    public void AssignDamage (int damage)
     {
         _damage = damage;
-        _isCritical = isCritical;
-        return _damage;
+        Debug.Log("Присвоен урон пуле" + _damage);
     }
 }

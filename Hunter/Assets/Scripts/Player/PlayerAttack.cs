@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     private void Start() 
     {
         _player = transform.parent.gameObject.GetComponent<Player>();
+        _bullet.AssignDamage(_player.DealDamage());
     }
 
     private void Update() 
@@ -28,7 +29,7 @@ public class PlayerAttack : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 PlayerDamageObject tempBullet = Instantiate(_bullet, _shotDirection.position, transform.rotation);
-                tempBullet.AssignDamage(_player.DealDamage(), _player.TryDoCriticalDamage());
+                tempBullet.AssignDamage(_player.DealDamage());
                 _timeShot = _cooldown;
             }
         }

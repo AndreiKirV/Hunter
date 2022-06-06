@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
 
     public bool IsRanged => _isRanged;
     public float RangeOfAttack => _rangeOfAttack;
+    public int BaseDamage => _baseDamage;
 
     public Weapon (int baseDamage, float rangeOfAttack, bool isRanged = false)
     {
