@@ -15,7 +15,6 @@ public class PlayerAttack : MonoBehaviour
     private void Start() 
     {
         _player = transform.parent.gameObject.GetComponent<Player>();
-        _bullet.AssignDamage(_player.DealDamage());
     }
 
     private void Update() 

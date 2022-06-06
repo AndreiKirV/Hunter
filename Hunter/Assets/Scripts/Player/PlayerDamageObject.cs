@@ -41,6 +41,6 @@ public class PlayerDamageObject : MonoBehaviour
     public void AssignDamage (int damage)
     {
         _damage = damage;
-        Debug.Log("Присвоен урон пуле" + _damage);
+        Debug.Log($"Присвоен урон пуле _damage");
     }
 }
