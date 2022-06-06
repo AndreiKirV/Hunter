@@ -16,7 +16,6 @@ public class PlayerAttack : MonoBehaviour
     {
         _player = transform.parent.gameObject.GetComponent<Player>();
     }
-
     private void Update() 
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -28,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 PlayerDamageObject tempBullet = Instantiate(_bullet, _shotDirection.position, transform.rotation);
-                tempBullet.AssignDamage(_player.DealDamage());
+                tempBullet.TakeOwner(_player);
                 _timeShot = _cooldown;
             }
         }

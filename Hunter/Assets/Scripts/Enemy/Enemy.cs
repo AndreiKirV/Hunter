@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _health -= damage;
-        Debug.Log("Здоровье врага" + _health);
+        Debug.Log("Здоровье врага после урона: " + _health);
 
         if (_health <= 0)
         {
@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<PlayerDamageObject>(out PlayerDamageObject DamageObject))
         {   
-            Debug.Log(DamageObject.Damage);
+            Debug.Log($"в {gameObject} влетело {DamageObject.Damage} урона");
             TakeDamage(DamageObject.Damage);
         }
     }

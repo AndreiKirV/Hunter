@@ -7,6 +7,7 @@ public class PlayerDamageObject : MonoBehaviour
     [SerializeField] private float _speed;
     private int _damage;
     private bool _isCritical = false;
+    private Player _player;
 
     public int Damage => _damage;
 
@@ -14,6 +15,11 @@ public class PlayerDamageObject : MonoBehaviour
     {
         _damage = damage;
         _isCritical = isCritical;
+    }
+
+    private void Start() 
+    {
+        AssignDamage(_player.Damage);
     }
 
     private void Update() 
@@ -38,9 +44,14 @@ public class PlayerDamageObject : MonoBehaviour
         }
     }
 
-    public void AssignDamage (int damage)
+    private void AssignDamage (int damage)
     {
         _damage = damage;
-        Debug.Log($"Присвоен урон пуле _damage");
+        Debug.Log($"Присвоен урон пуле {_damage}");
+    }
+
+    public void TakeOwner(Player player)
+    {
+        _player = player;
     }
 }

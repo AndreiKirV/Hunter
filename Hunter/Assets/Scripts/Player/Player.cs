@@ -20,12 +20,13 @@ public class Player : MonoBehaviour
     private Weapon _currentWeapon = new Weapon(2,2f); //SerializeField
 
     private int _currentHealth;
+    private int _maxValueMilitaryLuck = 100;
+    private int _minValueMilitaryLuck = 0;
     private StatsSheet _statsSheet;
     private List<Weapon> _weapons;
     private List <Enemy> _enemiesInSight;
-    private int _maxValueMilitaryLuck = 100;
-    private int _minValueMilitaryLuck = 0;
     private Enemy _targetEnemy;
+    private int _damage;
 
     private List<Enemy> _enemies;
 
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
     public int MilitaryLuck => _militaryLuck;
     public int Luck => _luck;
     public int PlayerLife => _playerLife;
+    public int Damage => _damage;
     public float Speed => _speed;
     public float Marksmanship => _marksmanship;
     public Weapon CurrentWeapon => _currentWeapon;
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour
     private void Start() 
     {
         _statsSheet = new StatsSheet(_strength, _masteryOfRanged, _agility, _militaryLuck, _luck, _marksmanship);
+        _damage = DealDamage();
     }
 
     public int DealDamage ()
