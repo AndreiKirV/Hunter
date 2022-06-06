@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class AgroDistanceTransition : Transition
 {
-    [SerializeField] private float _transitionRange;
-    [SerializeField] private float _rangeSpread; 
+    [SerializeField] private float _agroRange;
     [SerializeField] private CircleCollider2D _circleCollider;
-    [SerializeField] private float _location;
+
+    public float AgroRange => _agroRange;
 
     private void Start()
     {
-        _transitionRange += Random.Range(-_rangeSpread, _rangeSpread);
+        
     }
 
     private void Update()
     {
-        if (Vector2.Distance(transform.position, Target.transform.position) < _transitionRange)
-            NeedTransit = true;
+        if (Vector2.Distance(transform.position, Target.transform.position) < _agroRange)
+            NeedTransitNext = true;
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(_circleCollider.bounds.center * _location, _circleCollider.radius * _rangeSpread);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(_circleCollider.bounds.center, _agroRange);
     }
 }

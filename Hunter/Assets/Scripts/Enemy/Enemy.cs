@@ -5,11 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int _health = 100;
+    [SerializeField] private int _health;
     //[SerializeField] private int _reward;
     [SerializeField] private Animator _animator;
-    private Player _target;
+    [SerializeField] private Player _target;
+
     private Vector2 _direction;
+    private int _currentHealth;
 
     private void Update()
     {
@@ -20,7 +22,7 @@ public class Enemy : MonoBehaviour
 
     public Player Target => _target;
 
-    public int TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         _health -= damage;
         Debug.Log("Здоровье врага" + _health);
@@ -30,8 +32,6 @@ public class Enemy : MonoBehaviour
             Debug.Log("Ай эм умер");
             Destroy(gameObject);
         }
-
-        return _health;
     }
 
     public void AssignTarget(Player player)

@@ -38,9 +38,13 @@ public abstract class State : MonoBehaviour
     {
         foreach(var transition in _transitions)
         {
-            if (transition.NeedTransit)
+            if (transition.NeedTransitNext)
             {
                 return transition.TargetState;
+            }
+            else if (transition.NeedTransitPrevious)
+            {
+                return transition.PreviousState;
             }
         }
 

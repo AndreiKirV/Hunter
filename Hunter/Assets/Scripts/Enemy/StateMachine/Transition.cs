@@ -5,12 +5,16 @@ using UnityEngine;
 public abstract class Transition : MonoBehaviour
 {
     [SerializeField] private State _targetState;
+    [SerializeField] private State _previousState;
 
     protected Player Target { get; private set; }
 
     public State TargetState => _targetState;
+    public State PreviousState => _previousState;
 
-    public bool NeedTransit { get; protected set; }
+
+    public bool NeedTransitNext { get; protected set;}
+    public bool NeedTransitPrevious { get; protected set;}
 
     public void Init(Player target)
     {
@@ -19,6 +23,7 @@ public abstract class Transition : MonoBehaviour
 
     private void OnEnable()
     {
-        NeedTransit = false;
+        NeedTransitNext = false;
+        NeedTransitPrevious = false;
     }
 }
