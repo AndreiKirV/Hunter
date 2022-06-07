@@ -4,24 +4,11 @@ using UnityEngine;
 
 public class GeneratorLevel : MonoBehaviour
 {
-    public static int[,] GenerateArray(int width, int height, bool empty)
-    {
-        int[,] map = new int[width, height];
+    [SerializeField] private int _sizeX;
+    [SerializeField] private int _sizeY;
+    [SerializeField] private int _noColisionCompleteChance;
 
-        for (int x = 0; x < map.GetUpperBound(0); x++)
-        {
-            for (int y = 0; y < map.GetUpperBound(1); y++)
-            {
-                if (empty)
-                {
-                    map[x, y] = 0;
-                }
-                else
-                {
-                    map[x, y] = 1;
-                }
-            }
-        }
-        return map;
-    }
+    public int SizeX => _sizeX;
+    public int SizeY => _sizeY;
+    public int NoColisionCompleteChance => _noColisionCompleteChance;
 }
